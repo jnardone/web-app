@@ -37,7 +37,7 @@ app.use(
   })
 );
 
-app.use(auth({ secret: SESSION_SECRET, auth0Logout: true, baseURL: APP_URL }));
+app.use(auth({ secret: SESSION_SECRET, auth0Logout: true, authRequired: false, baseURL: APP_URL }));
 
 const expenses = [
   {
