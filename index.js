@@ -43,7 +43,7 @@ app.use(
    secret: SESSION_SECRET,
    authRequired: false,
    auth0Logout: true,
-   baseURL: APP_URL,
+   baseURL: API_URL,
    // 👇 add this 👇
    authorizationParams: {
      response_type: "code id_token",
